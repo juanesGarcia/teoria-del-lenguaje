@@ -1,0 +1,29 @@
+.nav-link{
+    color: antiquewhite;
+}
+
+.form-group{
+    margin-top: 10%;
+}
+
+.for{
+    margin-left: 70px;
+}
+
+#alfabeto1{
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 35px;
+    width: 80%;
+}
+#alfabeto2{
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 35px;
+    width: 80%;
+}
+
+
+.btn{
+    margin-left: 75px;
+}
