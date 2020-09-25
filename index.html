@@ -38,12 +38,12 @@
 
      <div class="form-row">
             <div class="form-group col-sm-4">
-              <label for="alfabeto1" class="for"><h4> Alfabeto1 :</h4></label>
+              <label for="alfabeto1" class="for"><h2> Alfabeto1 :</h2></label>
               <input type="text" class="form-control" id="alfabeto1" placeholder="ingrese el alfabeto 1"/>
               <button id="button" class="btn btn-primary" type="reset" onclick="capturar1();"> agregar</button>
             </div>
               <div class="form-group col-sm-4">
-                <label for="alfabeto2" class="for"><h4>Alfabeto 2: </h4></label>
+                <label for="alfabeto2" class="for"><h2>Alfabeto 2: </h2></label>
                 <input type="text" class="form-control" id="alfabeto2" placeholder="ingrese el alfabeto 2"/>
                 <button id="button" class="btn btn-primary" type="reset" onclick="capturar2();"> agregar</button>
               </div>
@@ -51,32 +51,35 @@
        
        <div class="form-row">
             <div class="form-group1 col-sm-4">
-              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo" id="boton">Union</button>
+              <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo" id="boton" onclick="inter();">intercesion</button>
            <div id="demo" class="collapse">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <h4>la intercesion es: </h4>
+  
+                  <h5 id="a">
+
+                  </h5>
            </div>
           
 
             </div>
             <div class="form-group1 col-sm-4">
 
-              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1" id="boton">Intercepcion</button>
+              <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1" id="boton" onclick="Union();">Union</button>
               <div id="demo1" class="collapse">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <h4>la union es: </h4>
+                <h5 class="a1"></h5>
+  
+               
               </div>
 
             </div>
 
             <div class="form-group1 col-sm-4">
-              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2" id="boton">Diferencia</button>
+              <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo2" id="boton" onclick="dif();">Diferencia</button>
               <div id="demo2" class="collapse">
-             Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                <h4>la diferencia es: </h4>
+                <h5 class="a2"></h5>
+  
               </div>
 
 

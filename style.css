@@ -27,6 +27,7 @@
 .btn{
     margin-left: 75px;
     margin-top: 1%;
+    border-radius: 5%;
 }
 #boton{
     width: 70%;

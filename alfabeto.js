@@ -32,3 +32,41 @@ function agregar2(){
     alf2.push(capturarele2);
    console.log(alf2);
 }
+
+function inter(){
+    var inter=[]
+    for(var i=0;i<alf1.length;i++){
+        for(var j=0;j<alf2.length;j++){
+            if(alf1[i]==alf2[j]){
+                inter.push(alf1[i]);
+            }
+               
+        }
+    
+    }
+    if(inter.length==0){
+        document.getElementById("a").innerHTML= "no existe una intercesion";
+
+    }else{
+        document.getElementById("a").innerHTML= inter.toString();
+
+    }
+   
+}
+
+function dif(){
+    var dif = []
+    for(var i=0;i<alf1.length;i++){
+        var cont=0;
+        for(var j=0;j<alf2.length;j++){
+            if(alf1[i]!==alf2[j]){
+               if(cont==alf2.length){
+                   dif.push(alf1[i])
+               }
+            }
+            cont++;   
+        }
+    
+    }
+    document.getElementById("a2").innerHTML= dif.toString();
+}
