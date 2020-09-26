@@ -7,7 +7,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylepalabra.css">
+    <script src="palabra.js"></script>
     <title>Teoria del lenguaje</title>
   </head>
   <body>
@@ -33,6 +34,35 @@
         </li>
       </ul>
     </div>
+
+      <div class="container">
+        <label for="palabra" class="for"><h2> Palabra :</h2></label>
+        <input type="text" class="form-control" id="palabra" placeholder="digite la palabra"/>
+        <button id="button" class="btn btn-primary" type="reset" onclick="capturarpalabra();"> agregar</button>
+      </div>
+ 
+   <div class="form-row">
+      <div class="form-group col-sm-6">
+        <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo" id="boton"> Cardinalidad </button>
+       <div id="demo" class="collapse">
+          <h4>la cardinalidad es: </h4>
+
+            <h5 id="p1">
+
+            </h5>
+       </div>
+      </div>
+      <div class="form-group col-sm-6">
+       <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#demo1" id="boton">      Inversa</button>
+        <div id="demo1" class="collapse">
+          <h4>la inversa es: </h4>
+          <h5 id="p2"></h5>
+
+        </div>
+
+      </div>
+
+ </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

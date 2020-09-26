@@ -34,39 +34,58 @@ function agregar2(){
 }
 
 function inter(){
-    var inter=[]
+    var intera=[];
     for(var i=0;i<alf1.length;i++){
         for(var j=0;j<alf2.length;j++){
             if(alf1[i]==alf2[j]){
-                inter.push(alf1[i]);
+                intera.push(alf1[i]);
             }
                
         }
     
     }
-    if(inter.length==0){
+    console.log(inter);
+    if(intera.length==0){
         document.getElementById("a").innerHTML= "no existe una intercesion";
 
     }else{
-        document.getElementById("a").innerHTML= inter.toString();
+        document.getElementById("a").innerHTML= intera.toString();
 
     }
    
 }
 
 function dif(){
-    var dif = []
+    var di = []
     for(var i=0;i<alf1.length;i++){
-        var cont=0;
-        for(var j=0;j<alf2.length;j++){
-            if(alf1[i]!==alf2[j]){
-               if(cont==alf2.length){
-                   dif.push(alf1[i])
-               }
-            }
-            cont++;   
-        }
-    
+       if(existe(alf2,alf1[i])==false){
+            di.push(alf1[i]);
+       }
     }
-    document.getElementById("a2").innerHTML= dif.toString();
+    console.log(di);
+    document.getElementById("a2").innerHTML= di.toString();
 }
+
+function existe(con,x){
+    var existe=false;
+    for(var i=0;i<con.length;i++){
+        if(con[i]==x){
+            existe=true;
+        }
+    }
+    return existe;
+}
+
+function union(){
+    var uni=[];
+    for(var i=0;i<alf1.length;i++){
+        uni.push(alf1[i]);
+    }
+
+    for(var j=0;j<alf2.length;j++){
+        if(existe(uni,alf2[j])==false){
+            uni.push(alf2[j]);
+        }
+    }
+  document.getElementById("a1").innerHTML=uni.toString();
+ }
