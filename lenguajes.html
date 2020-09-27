@@ -1,14 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Teoria del lenguaje</title>
+    <link rel="stylesheet" href="stylelenguajes.css">
+    <script src="lenguajes.js"></script>
   </head>
   <body>
    
@@ -33,12 +33,80 @@
         </li>
       </ul>
     </div>
-  
+    
+    <div class="form-row">
+      <div class="form-group col-sm-4">
+        <label for="len1" class="for"><h2> Lenguaje 1 :</h2></label>
+        <input type="text" class="form-control" id="len1" placeholder="ingrese el lenguaje 1"/>
+        <button id="button" class="btn btn-primary" type="reset" onclick="captulen1();" id="boton"> agregar</button>
+      </div>
+        <div class="form-group col-sm-4">
+          <label for="len2" class="for"><h2>Lenguaje 2: </h2></label>
+          <input type="text" class="form-control" id="len2" placeholder="ingrese el lenguaje 2"/>
+          <button id="button" class="btn btn-primary" type="reset" onclick="captulen2();" id="boton"> agregar</button>
+        </div>
+    </div>
+        
+       <div class="form-row">
+        <div class="form-group col-sm-4">
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#union" onclick="unilen();">Union</button>
+       <div id="union" class="collapse">
+            <h4 id="acom">la union es: </h4>
+              <h5 id="unilen">
+              </h5>
+       </div>
+        </div>
+        <div class="form-group col-sm-4">
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#interseccion" onclick="interlen();"> Intercesion</button>
+          <div id="interseccion" class="collapse">
+            <h4  id="acom">la interseccion es: </h4>
+            <h5 id="interlen"></h5>
+          </div>
+        </div>
+        <div class="form-group col-sm-4">
+          <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#dife" onclick="diflen();">Diferencia</button>
+          <div id="dife" class="collapse">
+            <h4  id="acom">la diferencia es: </h4>
+            <h5 id="difelen"></h5>
+          </div>
+        </div>    
+       </div>  
+   <div class="form-row">
+    <div class="form-group col-sm-4">
+      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#conca" onclick="conca();">Concatenacion</button>
+   <div id="conca" class="collapse">
+        <h4  id="acom">la concatenacion es: </h4>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="node_modules/jquery/dist/jquery.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="node_modules/popper.js/dist/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-  </body>
+          <h5 id="concatenacion">
+
+          </h5>
+   </div>
+    </div>
+    <div class="form-group col-sm-4">
+      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#potencia" onclick="potencia();">Potencia</button>
+      <div id="potencia" class="collapse">
+        <h4  id="acom">la potencia es: </h4>
+        <h5 id="potlen"></h5>
+      </div>
+    </div>
+    <div class="form-group col-sm-4">
+      <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#inver" onclick="inversa();">Inversa</button>
+      <div id="inver" class="collapse">
+        <h4  id="acom">la inversa es: </h4>
+        <h5 id="inverlen"></h5>
+       </div>
+     </div>
+  </div>
+  <div class="form-row">
+  <div class="form-group col-sm-4">
+    
+    <button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#cardi" onclick="cardinalidad();" id="carmo">Cardinalidad</button>
+      <div id="cardi" class="collapse">
+        <h4  id="acomcar">cardinalidad: </h4>
+        <br>
+        <h5 id="cardilan"></h5>
+        </div>
+      </div>
+   </div>
+ </body>
 </html>

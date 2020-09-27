@@ -1,0 +1,46 @@
+.form-group{
+    margin-top: 10%;
+    margin-bottom: 20px;
+ }
+ .for{
+     margin-left: 22%;
+ }
+
+ #len1{
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-left: 15%;
+}
+#len2{
+    margin-top: 5px;
+    margin-bottom: 25px;
+    margin-left: 20%;
+}
+.btn{
+    margin-left: 18%;
+    width: 60%;
+}
+#acom{
+    margin-left: 8%;
+    margin-top: 10px;
+}
+
+.nav-link{
+    color: antiquewhite;
+}
+
+#boton{
+    width: 10%;
+}
+
+#carmo{
+    margin-left: 120%;
+}
+
+#acomcar{
+    margin-left: 110%;
+}
+#cardi{
+    height: 20px;
+    margin-top: 15px;
+}
