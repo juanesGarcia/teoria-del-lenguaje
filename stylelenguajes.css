@@ -3,7 +3,7 @@
     margin-bottom: 20px;
  }
  .for{
-     margin-left: 22%;
+     margin-left: 30%;
  }
 
  #len1{
@@ -14,7 +14,7 @@
 #len2{
     margin-top: 5px;
     margin-bottom: 25px;
-    margin-left: 20%;
+    margin-left: 30%;
 }
 .btn{
     margin-left: 18%;
@@ -34,25 +34,64 @@
 }
 
 #carmo{
-    margin-left: 120%;
+    margin-left: 80%;
+    width: 40%;
 }
 
 #acomcar{
-    margin-left: 110%;
+    margin-left: 65%;
 }
 #cardi{
-    height: 20px;
+    height: 40px;
+    width: 120%;
     margin-top: 15px;
 }
 
 #unilen{
-    margin-left: 8%;
+    margin-left: 12%;
 }
 
 #difelen{
-    margin-left: 8%;
+    margin-left: 12%;
 }
 
 #interleng{
-    margin-left: 8%;
+    margin-left: 12%;
+}
+
+#acom{
+    margin-left: 12%;
+}
+
+#concatenacion{
+    margin-left: 12%;
+}
+
+#cardilan{
+    margin-left: 65%;
+}
+
+#cardilan1{
+    margin-left: 65%;
+}
+
+#inverlen{
+    margin-left: 12%;
+}
+
+#inverlen1{
+    margin-left: 12%;
+}
+
+#button{
+    width: 32%;
+    margin-left: 30%;
+}
+.for1{
+    margin-left: 20%;
+}
+
+#button1{
+    width: 32%;
+    margin-left: 18%;
 }

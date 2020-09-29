@@ -75,7 +75,44 @@ function interlen(){
 
     }else{
         document.getElementById("interleng").innerHTML= intera.toString();
-
     }
-   
+}
+
+function conca(){
+    var concat=[];
+    for(var i=0;i<len1.length;i++){
+        for(var j=0;j<len2.length;j++){
+            c=len1[i]+" "+len2[j]
+            concat.push(c);
+         }
+    }
+    document.getElementById("concatenacion").innerHTML= concat.toString();
+ }
+
+ function inversa(){
+    
+    palabrasv(len1);
+    document.getElementById("inverlen").innerHTML= pala.toString();
+    palabrasv(len2);
+    document.getElementById("inverlen1").innerHTML= pala.toString();
+
+    
+ }
+
+ function palabrasv(x){
+     pala=[];
+    for(var i=0;i<x.length;i++){
+        var v=x[i].length;
+        var cadenaInvertida=" ";
+    while (v>=0) {
+        cadenaInvertida = cadenaInvertida + x[i].charAt(v);
+        v--;
+      }
+      pala.push(cadenaInvertida);
+    }
+ }
+
+function cardinalidad(){
+    document.getElementById("cardilan").innerHTML= len1.length;
+    document.getElementById("cardilan1").innerHTML= len2.length;
 }
