@@ -116,3 +116,22 @@ function cardinalidad(){
     document.getElementById("cardilan").innerHTML= len1.length;
     document.getElementById("cardilan1").innerHTML= len2.length;
 }
+
+function potencia(){
+    
+    for(var i=0;i<2;i++){
+        p=[]
+            for(var i=0;i<len1.length;i++){
+                p.push(len1[i]);        
+            }    
+        
+            for(var i=0;i<p.length;i++){
+                for(var i=0;i<len1.length;i++){
+                    var pot=p[i]+" "+len1[i];
+                    p.push(pot)
+                }  
+            }
+       }
+    document.getElementById("potlen").innerHTML= p.toString();
+
+}
