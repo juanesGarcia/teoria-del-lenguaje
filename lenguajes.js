@@ -79,14 +79,21 @@ function interlen(){
 }
 
 function conca(){
+     concatenacion=con(len1,len2);
+    document.getElementById("concatenacion").innerHTML= concatenacion.toString();
+
+
+}
+
+ function con(x,y){
     var concat=[];
-    for(var i=0;i<len1.length;i++){
-        for(var j=0;j<len2.length;j++){
-            c=len1[i]+" "+len2[j]
+    for(var i=0;i<x.length;i++){
+        for(var j=0;j<y.length;j++){
+            c=x[i]+" "+y[j];
             concat.push(c);
          }
     }
-    document.getElementById("concatenacion").innerHTML= concat.toString();
+    return concat;
  }
 
  function inversa(){
@@ -117,21 +124,14 @@ function cardinalidad(){
     document.getElementById("cardilan1").innerHTML= len2.length;
 }
 
-function potencia(){
+function potencia(){  
+   var  p=[],p1=[];
+
+    p.push(con(len1,len1));
+    p1.push(con(len2,len2));
     
-    for(var i=0;i<2;i++){
-        p=[]
-            for(var i=0;i<len1.length;i++){
-                p.push(len1[i]);        
-            }    
-        
-            for(var i=0;i<p.length;i++){
-                for(var i=0;i<len1.length;i++){
-                    var pot=p[i]+" "+len1[i];
-                    p.push(pot)
-                }  
-            }
-       }
     document.getElementById("potlen").innerHTML= p.toString();
+    document.getElementById("potlen1").innerHTML= p1.toString();
+
 
 }
